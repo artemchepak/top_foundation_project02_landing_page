@@ -19,6 +19,13 @@ li {
   padding: 0;
 }
 
+h1,
+h3,
+h4, p {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -30,21 +37,138 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  justify-content: space-between;
 }
 
 .section-wrapper {
-  width: 1025px;
+  width: 1100px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.header, .top-section, .footer {
+.header,
+.top-section,
+.footer {
   background-color: #1F2937;
   color: #e5e7eb;
   font-size: 18px;
 }
 
-.gallery-section, .action-section {
+.header,
+.top-section,
+.footer,
+.gallery-section,
+.quote-section,
+.action-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+.header-menu {
+  font-size: 18px;
+  display: flex;
+  gap: 25px;
+}
+
+.header-menu a:visited {
+  color: #e5e7eb;
+}
+
+.top-section {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.top-section-info {
+  margin-right: 50px;
+  max-width: 450px;
+}
+
+.top-section-img {
+  height: 240px;
+  width: 520px;
+  background-color: #6d747d;
+  background-image: url(https://www.cnet.com/a/img/resize/04e733bbfd177a9a39d6a81877189e9a287a457f/hub/2014/02/13/8efe28d7-a5e1-11e3-a24e-d4ae52e62bcc/CatvengersPress.jpg?auto=webp&fit=crop&height=675&width=1200);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.top-section-title {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
+}
+
+.top-section-text {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.top-section-btn {
+  font-size: 18px;
+  padding: 11px 39px;
+  border-radius: 10px;
+  background-color: #3882f6;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #e60c0c;
+  color: #222222;
+}
+
+.gallery-section,
+.action-section {
   background-color: #ffffff;
+}
+
+.gallery-section .section-wrapper {
+  flex-direction: column;
+}
+
+.gallery-title {
+  font-size: 36px;
+  color: #1F2937;
+  font-weight: 900;
+  margin-bottom: 60px;
+  margin-top: 40px;
+}
+
+.gallery-cards {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 80px;
+}
+
+.cards-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 168px;
+}
+
+.cards-item-img {
+  border: #3882f6 solid 3px;
+  border-radius: 10px;
+  width: 168px;
+  height: 168px;
+}
+
+.cards-item-text {
+  text-align: center;
 }
 
 .quote-section {
